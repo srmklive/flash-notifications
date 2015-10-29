@@ -53,7 +53,7 @@ class FlashAlertHandler
      */
     public function error($title, $message)
     {
-        $this->message($title, $message, 'danger');
+        $this->message($title, $message, 'error');
     }
 
     /**
@@ -63,7 +63,7 @@ class FlashAlertHandler
      * @param string $message
      * @param string $level
      */
-    public function message($title, $message, $level = 'info')
+    public function message($title, $message, $level)
     {
         $this->session->flash('flashalert.title', $title);
         $this->session->flash('flashalert.message', $message);

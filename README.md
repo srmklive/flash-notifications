@@ -1,15 +1,18 @@
 Flash Notifications
 ===================
 
-**This is an experimental release.!**
-
-Laravel 5 flash notifications, originally developed after the Laracasts video tutorial : [Elegant Flash Messaging](https://laracasts.com/series/build-project-flyer-with-me/episodes/9).
+Laravel 5 flash notifications, originally developed after the Laracasts video tutorial : [Elegant Flash Messaging](https://laracasts.com/series/build-project-flyer-with-me/episodes/9) which uses [SweetAlert](http://t4t5.github.io/sweetalert/).
 
 Quick Installation
 ------------------
 Run the following command to install the package through Composer.
 ```
 composer require srmklive/flash-notifications
+```
+
+or in your composer.json file, add `"srmklive/flash-notifications": ">=0.1"` then run
+```
+composer update
 ```
 
 Once this operation is complete, simply add both the service provider and facade classes to your project's `config/app.php` file:
@@ -36,12 +39,14 @@ Srmklive\FlashAlert\FlashAlertServiceProvider::class,
 'FlashAlert' => Srmklive\FlashAlert\Facades\FlashAlert::class,
 ```
 
-#### Publish Configuration
+#### Publish Configuration & Views
+```
 php artisan vendor:publish
+```
 
 Usage
 -----
-Usage is simple. Before redirecting to another page, simply call on `FlashAlert` to set your desired flash notification. There are a number of methods to assign different levels of priority (info, success, warning, and error).
+Simply call on `FlashAlert` to set your desired flash notification. There are a number of methods to assign different levels of priority (info, success, warning, and error).
 
 #### Success
 
