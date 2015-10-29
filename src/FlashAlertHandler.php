@@ -53,7 +53,7 @@ class FlashAlertHandler
      */
     public function error($title, $message)
     {
-        $this->message($title, $message, 'danger');
+        $this->message($title, $message, 'error');
     }
 
     /**
