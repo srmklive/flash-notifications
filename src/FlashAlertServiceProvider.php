@@ -58,7 +58,7 @@ class FlashAlertServiceProvider extends ServiceProvider
             'Srmklive\FlashAlert\FlashAlertSessionStore'
         );
 
-        $this->app->bindShared('flashalert', function() {
+        $this->app->singleton('flashalert', function() {
             return $this->app->make('Srmklive\FlashAlert\FlashAlertHandler');
         });
     }
