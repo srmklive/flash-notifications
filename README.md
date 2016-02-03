@@ -73,7 +73,7 @@ FlashAlert::error('Error', 'This is an error message.');
 ```
 
 ### Rendering
-To render your flash notifications in your view, simply include the view partial in your master layout:
+To render your flash notifications in your view, simply include the view partial in your master layout. Also add **@yield('styles')** & **yield('scripts')** in your master layout:
 
 ```php
 @include('flashalert::alert')
