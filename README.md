@@ -17,26 +17,16 @@ composer update
 
 Once this operation is complete, simply add both the service provider and facade classes to your project's `config/app.php` file:
 
-#### Laravel 5.0.x
-##### Service Provider
+#### Service Provider
 ```php
-'Srmklive\FlashAlert\FlashAlertServiceProvider',
+'Srmklive\FlashAlert\FlashAlertServiceProvider',  // Laravel 5.0
+Srmklive\FlashAlert\FlashAlertServiceProvider::class, // Laravel 5.1 or greater
 ```
 
-##### Facade
+#### Facade
 ```php
-'FlashAlert' => 'Srmklive\FlashAlert\Facades\FlashAlert',
-```
-
-#### Laravel 5.1.x
-##### Service Provider
-```php
-Srmklive\FlashAlert\FlashAlertServiceProvider::class,
-```
-
-##### Facade
-```php
-'FlashAlert' => Srmklive\FlashAlert\Facades\FlashAlert::class,
+'FlashAlert' => 'Srmklive\FlashAlert\Facades\FlashAlert', // Laravel 5.0
+'FlashAlert' => Srmklive\FlashAlert\Facades\FlashAlert::class,  // Laravel 5.1 or greater
 ```
 
 #### Publish Configuration & Views
