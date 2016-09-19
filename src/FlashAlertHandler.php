@@ -1,5 +1,6 @@
-<?php namespace Srmklive\FlashAlert;
+<?php
 
+namespace Srmklive\FlashAlert;
 
 class FlashAlertHandler
 {

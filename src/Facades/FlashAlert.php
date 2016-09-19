@@ -1,6 +1,8 @@
-<?php namespace Srmklive\FlashAlert\Facades;
+<?php
 
-/**
+namespace Srmklive\FlashAlert\Facades;
+
+/*
  * Class Facade
  * @package Srmklive\FlashAlert\Facades
  * @see Srmklive\FlashAlert\FlashAlertHandler

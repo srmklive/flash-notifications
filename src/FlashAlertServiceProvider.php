@@ -1,6 +1,8 @@
-<?php namespace Srmklive\FlashAlert;
+<?php
 
-/**
+namespace Srmklive\FlashAlert;
+
+/*
  * Class PayPalServiceProvider
  * @package Srmklive\FlashAlert
  */
@@ -25,7 +27,7 @@ class FlashAlertServiceProvider extends ServiceProvider
     {
         // Publish config files
         $this->publishes([
-            __DIR__. '/../config/config.php' => config_path('flashalert.php'),
+            __DIR__.'/../config/config.php' => config_path('flashalert.php'),
         ]);
 
         // Load FlashAlert View Files
@@ -58,7 +60,7 @@ class FlashAlertServiceProvider extends ServiceProvider
             'Srmklive\FlashAlert\FlashAlertSessionStore'
         );
 
-        $this->app->singleton('flashalert', function() {
+        $this->app->singleton('flashalert', function () {
             return $this->app->make('Srmklive\FlashAlert\FlashAlertHandler');
         });
     }

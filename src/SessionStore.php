@@ -1,10 +1,11 @@
-<?php namespace Srmklive\FlashAlert;
+<?php
 
+namespace Srmklive\FlashAlert;
 
 interface SessionStore
 {
     /**
-     * Flash a message to the session
+     * Flash a message to the session.
      *
      * @param string $name
      * @param mixed  $data
