@@ -14,5 +14,15 @@
     "psr-4": {
       "Srmklive\\FlashAlert\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Srmklive\\FlashAlert\\FlashAlertServiceProvider"
+      ],
+      "aliases": {
+        "FlashAlert": "Srmklive\\FlashAlert\\Facades\\FlashAlert"
+      }
+    }
   }
 }
